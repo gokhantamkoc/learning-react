@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "headline": "Walke says React become a trend",
+    "description": "React has become trend nowadays and we have to answer our developers' need carefully.",
+    "author": "Jorwin Lake"
+  },
+  {
+    "id": 2,
+    "headline": "Picsai says Angular.js popularity dropped",
+    "description": "Angular.js popularity dropped because of recent developments in ES6 and we could not adapt.",
+    "author": "Tendar Picsai"
+  },
+  {
+    "id": 3,
+    "headline": "Microsoft will now support ES6 in Internet Explorer 13",
+    "description": "Due to recent developments in Front-End Technology, we are happy to announce that Internet Explorer 13 will support ES6.",
+    "author": "Bill Tongs"
+  },
+  {
+    "id": 4,
+    "headline": "ES8 is on air",
+    "description": "Ecma International announced ES8 at 5:00 pm(North Pacific Time).",
+    "author": "General Assembly, Ecma Interntional"
+  }
+]
