@@ -18,7 +18,7 @@ const newsList = (props) => {
 
     const news_items = props.news.map((item) => {
         return(
-            <div>
+            <div key={item.id}>
                 <h3>{item.headline}</h3>
                 <p>
                     {item.description}
