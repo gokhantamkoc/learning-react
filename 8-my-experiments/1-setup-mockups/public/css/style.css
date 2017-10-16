@@ -1,0 +1,16 @@
+body {
+    background-color: black;
+    color: white;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 15px;
+    font-family: Raleway;
+}
+
+.header {
+    text-align: center;
+    padding: 20px;
+    font-size: 30px;
+    font-family: Raleway;
+    border-bottom: 1px solid lightgray;
+}
