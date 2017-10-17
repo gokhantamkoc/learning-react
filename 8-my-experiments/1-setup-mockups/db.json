@@ -1,0 +1,36 @@
+{
+  "Items": [
+    {
+      "id": 1,
+      "category": "Basketball",
+      "price": 49.99,
+      "stocked": true,
+      "brand": "Nike",
+      "model": "Airmax 260"
+    },
+    {
+      "id": 2,
+      "category": "Tracking",
+      "price": 79.99,
+      "stocked": true,
+      "brand": "Salomon",
+      "model": "Earthshaker 720"
+    },
+    {
+      "id": 3,
+      "category": "Cycling",
+      "price": 129.99,
+      "stocked": false,
+      "brand": "Btwin",
+      "model": "Razor 1200"
+    },
+    {
+      "id": 4,
+      "category": "Football",
+      "price": 229.99,
+      "stocked": true,
+      "brand": "Reebok",
+      "model": "Grasshopper"
+    }
+  ]
+}
