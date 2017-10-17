@@ -2,35 +2,91 @@
   "Items": [
     {
       "id": 1,
-      "category": "Basketball",
+      "category": "Indoor",
       "price": 49.99,
       "stocked": true,
       "brand": "Nike",
-      "model": "Airmax 260"
+      "model": "Airmax 260",
+      "keywords": [
+        {
+          "id": 1,
+          "value": "shoe"
+        },
+        {
+          "id": 2,
+          "value": "sports"
+        },
+        {
+          "id": 3,
+          "value": "basketball"
+        }
+      ]
     },
     {
       "id": 2,
-      "category": "Tracking",
+      "category": "Outdoor",
       "price": 79.99,
       "stocked": true,
       "brand": "Salomon",
-      "model": "Earthshaker 720"
+      "model": "Earthshaker 720",
+      "keywords": [
+        {
+          "id": 1,
+          "value": "shoe"
+        },
+        {
+          "id": 2,
+          "value": "sports"
+        },
+        {
+          "id": 3,
+          "value": "tracking"
+        }
+      ]
     },
     {
       "id": 3,
-      "category": "Cycling",
+      "category": "Outdoor",
       "price": 129.99,
       "stocked": false,
       "brand": "Btwin",
-      "model": "Razor 1200"
+      "model": "Razor 1200",
+      "keywords": [
+        {
+          "id": 1,
+          "value": "bicycle"
+        },
+        {
+          "id": 2,
+          "value": "sports"
+        },
+        {
+          "id": 3,
+          "value": "vehicle"
+        }
+      ]
     },
     {
       "id": 4,
-      "category": "Football",
+      "category": "Outdoor",
       "price": 229.99,
       "stocked": true,
       "brand": "Reebok",
-      "model": "Grasshopper"
+      "model": "Grasshopper",
+      "keywords": [
+        {
+          "id": 1,
+          "value": "shoe"
+        },
+        {
+          "id": 2,
+          "value": "sports"
+        },
+        {
+          "id": 3,
+          "value": "football"
+        }
+      ]
     }
   ]
 }
