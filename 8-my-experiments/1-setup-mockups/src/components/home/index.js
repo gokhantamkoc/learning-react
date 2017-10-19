@@ -3,23 +3,46 @@ import { FormGroup, FormControl, InputGroup, Glyphicon } from 'react-bootstrap'
 
 import './css/style.css'
 
+import ItemList from '../item_list'
+
 class Home extends Component {
 
     constructor(props) {
         super(props);
         this.state = {
-            query: ''
+            query: '',
+            items: [],
+            filteredItems: []
         }
+        this.loadItems();
     }
 
-    searchItems() {
-        console.log(this.state.query);
+    loadItems() {
+        const BASE_URL = "http://localhost:9000";
+        const FETCH_URL = `${BASE_URL}/items`;
+        fetch(FETCH_URL, {
+            method: 'GET'
+        })
+            .then(response => response.json())
+            .then(json => {
+                this.setState({items: json, filteredItems: json});
+            });
+    }
+
+    searchItems(event) {
+        this.setState({filteredItems: this.state.items.filter(
+            item => {
+                return (
+                    item.category.indexOf(event.target.value) > -1 ||
+                    item.brand.indexOf(event.target.value) > -1
+                );
+            }
+        )});
     }
 
     render() {
         return (
             <div className='home'>
-                Items
                 <FormGroup>
                     <InputGroup>
                         <FormControl type='text' value={this.state.query}
@@ -36,6 +59,7 @@ class Home extends Component {
                         </InputGroup.Addon>
                     </InputGroup>
                 </FormGroup>
+                <ItemList items={this.state.filteredItems}/>
             </div>
         )
     }
